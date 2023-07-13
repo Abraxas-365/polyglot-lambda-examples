@@ -25,7 +25,8 @@ Install cargo [[labda https://www.cargo-lambda.info/guide/installation.html#with
 Go to rust folder and rust
 
 ```bash
- cargo lambda watch #the first time will install dependencies could take a while
+ cargo build #the first time will install dependencies could take a while
+ cargo lambda watch
 ```
 
 # What does the lambda does?

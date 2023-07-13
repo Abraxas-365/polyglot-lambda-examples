@@ -14,7 +14,8 @@ Ensure you have SAM and Docker installed on your machine. If not, refer to the [
 Go to the go folder and run
 
 ```bash
- sam local start-api --host localhost --docker-network bridge
+go mod tidy
+sam local start-api --host localhost --docker-network bridge
 ```
 
 ## Rust
@@ -24,7 +25,7 @@ Install cargo [[labda https://www.cargo-lambda.info/guide/installation.html#with
 Go to rust folder and rust
 
 ```bash
- cargo lambda watch
+ cargo lambda watch #the first time will install dependencies could take a while
 ```
 
 # What does the lambda does?

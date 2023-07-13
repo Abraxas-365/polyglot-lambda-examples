@@ -1,7 +1,8 @@
+use lib::pokemon::pokemon_type::Pokemon;
 use serde::Serialize;
 #[derive(Serialize)]
 pub struct SuccessResponse {
-    message: String,
+    pub message: String,
 }
 #[derive(Serialize)]
 pub enum LambdaResult {
